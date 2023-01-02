@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Map</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="assets/images/favicon.png">
+</head>
+<body>
+  <header>
+		<nav class="navbar navbar-expand-lg navbar-expand-lg">
+			<div class="container-fluid">
+					<a class="navbar-brand" href="index.html">
+						<img src="assets/images/logo_black.png" class="img-fluid" alt="LOGO">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="fas fa-bars"></span>
+					</button>
+				<div class="collapse navbar-collapse lateral-left" id="bs-example-navbar-collapse-1">
+					<ul class="nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">About Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="map-wrapper">
+		<div class="container">
+			<h2 class="map-title">Top 25 Countries</h2>
+			<div id="map"></div>
+			<div class="indicator">
+				<span class="colorbar"></span>
+				<span class="friendly">friendly</span>
+				<span class="normal">normal</span>
+				<span class="foe">foe</span>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+    <hr class="line-break">
+	</div>
+  <div class="placeholder-section">
+		<div class="container">
+			<h3 class="placeholder-title">List of top countries</h3>
+			<p>To know the reasons why these countries are top click on the countries or <a href="detail_page.html">click here</a></p>
+		</div>
+	</div>
+	<div class="country-list">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="friendly-country">
+						<ul class="list-group text-right">
+							<li class="list-group-item"><h4>Friendly countries</h4></li>
+							<li class="list-group-item"><a href="detail_page.html">Canada</a></li>
+							<li class="list-group-item"><a href="detail_page.html">United State</a></li>
+							<li class="list-group-item"><a href="detail_page.html">Japan</a></li>
+							<li class="list-group-item"><a href="detail_page.html">Saudi Arabia</a></li>
+							<li class="list-group-item"><a href="detail_page.html">Norway</a></li>
+							<li class="list-group-item"><a href="detail_page.html">Korea</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="foe-country">
+						<ul class="list-group text-left">
+							<li class="list-group-item"><h4>Foe countries</h4></li>
+							<li class="list-group-item"><a href="detail_page.html">India</a></li>
+							<li class="list-group-item"><a href="detail_page.html">China</a></li>
+							<li class="list-group-item"><a href="detail_page.html">Russia</a></li>
+							<li class="list-group-item"><a href="detail_page.html">Myanmar</a></li>
+							<li class="list-group-item"><a href="detail_page.html">Germany</a></li>
+							<li class="list-group-item"><a href="detail_page.html">Italy</a></li>
+						</ul>
+	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p class="footer-text text-center">Global Map &copy; Shahriar Soahg</p>
+	</footer>
+
+
+
+
+
+  <!-- scripts links here -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/mapdata.js"></script>
+  <script src="assets/worldmap.js"></script>
+	<script src="assets/customscripts.js"></script>
+</body>
+</html>
